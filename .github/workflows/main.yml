@@ -34,9 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-     
-     # Run an extra set to check if build updates 
+          
+      # Run an extra set to check if build updates 
       - name: User and Because
-      - run: >
+      - run: |
           echo "User ${{ github.event.inputs.username }} ran a workflow manually."
           echo "Because ${{ github.event.inputs.reason }}."
