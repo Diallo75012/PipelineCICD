@@ -34,11 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-jobs:
-  tests_manual_workflow:
-    runs-on: ubuntu-latest
-steps:
-    - run: >
+     
+     # Run an extra set to check if build updates 
+      - name: User and Because
+      - run: >
           echo "User ${{ github.event.inputs.username }} ran a workflow manually."
           echo "Because ${{ github.event.inputs.reason }}."
